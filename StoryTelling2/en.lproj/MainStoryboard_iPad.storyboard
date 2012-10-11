@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="3Kj-Ag-LEq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C54" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="3Kj-Ag-LEq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -712,50 +712,6 @@
         <image name="screen5PlayRecordingBtn.png" width="633" height="144"/>
         <image name="screen5ShareBtn.png" width="632" height="144"/>
     </resources>
-    <classes>
-        <class className="MainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="Screeen3VC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Screeen3VC.h"/>
-            <relationships>
-                <relationship kind="action" name="spinImages"/>
-                <relationship kind="outlet" name="boxLeft" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="boxMiddle" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="boxRight" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="picker1" candidateClass="UIPickerView"/>
-            </relationships>
-        </class>
-        <class className="Screen4VC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Screen4VC.h"/>
-        </class>
-        <class className="Screen5VC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Screen5VC.h"/>
-            <relationships>
-                <relationship kind="action" name="stop"/>
-                <relationship kind="outlet" name="characterImageView" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="objectImageView" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="placeImageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="Screen6VC" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Screen6VC.h"/>
-            <relationships>
-                <relationship kind="action" name="hidePlaybackView"/>
-                <relationship kind="action" name="listenToStory"/>
-                <relationship kind="action" name="redoStory"/>
-                <relationship kind="action" name="shareStory"/>
-                <relationship kind="action" name="spinImages"/>
-                <relationship kind="outlet" name="bigVideoButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="boxLeft" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="boxMiddle" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="boxRight" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

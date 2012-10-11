@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151526C816268C9300C52703 /* sc_engage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 151526C616268C9300C52703 /* sc_engage.mp3 */; };
+		151526C916268C9300C52703 /* sc_buckle_up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 151526C716268C9300C52703 /* sc_buckle_up.mp3 */; };
 		323BE8E9160FB8A3006B394E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 323BE8E8160FB8A3006B394E /* Icon.png */; };
 		323BE8EB160FB8AA006B394E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 323BE8EA160FB8AA006B394E /* Icon@2x.png */; };
 		323BE95D160FB970006B394E /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 323BE8EF160FB970006B394E /* Icon-72.png */; };
@@ -137,6 +139,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151526C616268C9300C52703 /* sc_engage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sc_engage.mp3; sourceTree = "<group>"; };
+		151526C716268C9300C52703 /* sc_buckle_up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sc_buckle_up.mp3; sourceTree = "<group>"; };
 		323BE8E8160FB8A3006B394E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		323BE8EA160FB8AA006B394E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		323BE8EF160FB970006B394E /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
@@ -293,6 +297,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		151526C416268C2300C52703 /* SoundFx */ = {
+			isa = PBXGroup;
+			children = (
+				151526C616268C9300C52703 /* sc_engage.mp3 */,
+				151526C716268C9300C52703 /* sc_buckle_up.mp3 */,
+			);
+			name = SoundFx;
+			sourceTree = "<group>";
+		};
 		323BE8EC160FB921006B394E /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,6 +495,7 @@
 				323BE9CA160FD332006B394E /* Default-Landscape@2x~ipad.png */,
 				323BE8EA160FB8AA006B394E /* Icon@2x.png */,
 				323BE8E8160FB8A3006B394E /* Icon.png */,
+				151526C416268C2300C52703 /* SoundFx */,
 				323BE8EC160FB921006B394E /* Images */,
 				32CD949C160E5120007BF03D /* My Classes */,
 				32CD9429160E2945007BF03D /* StoryTelling2 */,
@@ -722,6 +736,8 @@
 				323BE9C3160FB970006B394E /* squirral.mp3 in Resources */,
 				323BE9C5160FC68B006B394E /* bigGiraffe.png in Resources */,
 				323BE9CB160FD332006B394E /* Default-Landscape@2x~ipad.png in Resources */,
+				151526C816268C9300C52703 /* sc_engage.mp3 in Resources */,
+				151526C916268C9300C52703 /* sc_buckle_up.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

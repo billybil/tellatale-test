@@ -23,7 +23,7 @@
 @property (nonatomic, weak) IBOutlet UIButton *objectImageView;
 @property (nonatomic, weak) IBOutlet UIImageView *placeImageView;
 
-@property (nonatomic, strong) AVAudioPlayer *characterAudioPlayer, *objectAudioPlayer;
+@property (nonatomic, strong) AVAudioPlayer *characterAudioPlayer, *objectAudioPlayer, *soundFx;
 @property (nonatomic, strong) AVAudioRecorder *audioRecorder;
 
 @property (nonatomic, strong) UIView *mainView;

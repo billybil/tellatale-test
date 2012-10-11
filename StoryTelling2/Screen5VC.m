@@ -27,7 +27,7 @@
 @synthesize characterImageView;
 @synthesize objectImageView;
 @synthesize placeImageView;
-@synthesize characterAudioPlayer, objectAudioPlayer;
+@synthesize characterAudioPlayer, objectAudioPlayer, soundFx;
 @synthesize characterAudioFile, objectAudioFile;
 @synthesize audioRecorder;
 @synthesize mainView;
@@ -44,6 +44,8 @@
     */
     
     //Audio recording
+    // TODO: renenable audio recording later
+    /*
     NSError *error;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
@@ -54,6 +56,7 @@
     self.audioRecorder = [[AVAudioRecorder alloc] initWithURL:myURL settings:recordSettings error:&error];
     [audioRecorder prepareToRecord];
     [audioRecorder record];
+     */
 }
 
 - (void)viewDidLoad
@@ -123,6 +126,27 @@
     vertDistanceOfTouchFromObjectY = activePoint.y - sender.frame.origin.y;
     
     //[characterAudioPlayer play];
+    
+    // Sound FX
+    /*
+     NSError *error;
+     _backgroundMusicPlayer = [[AVAudioPlayer alloc]
+     initWithContentsOfURL:backgroundMusicURL error:&error];
+     [_backgroundMusicPlayer prepareToPlay];
+     [_backgroundMusicPlayer play];
+     */
+    NSError *error;
+    NSString *path = @"sc_engage.mp3";
+    NSData *soundFXfile = [NSData dataWithContentsOfFile:path];
+    soundFx = [[AVAudioPlayer alloc] initWithData:soundFXfile error:&error];
+    
+    [soundFx prepareToPlay];
+    NSLog(@"preparing to play: %@", path);
+    [soundFx play];
+    NSLog(@"played!");
+    
+
+    //soundFx = [[AVAudioPlayer alloc], path];
 }
 
 - (void)imageMoved:(UIButton *)sender withEvent:(UIEvent *)event{
@@ -156,11 +180,11 @@
     Screen6VC *newVC = (Screen6VC *)segue.destinationViewController;
     newVC.imageToShare = screenImage;
     
-    [audioRecorder stop];
+    //[audioRecorder stop];
 }
 
 -(void)stop{
-    [audioRecorder stop];
+    //[audioRecorder stop];
 }
 
 
