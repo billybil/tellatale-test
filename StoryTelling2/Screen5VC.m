@@ -149,8 +149,6 @@
     float newObject_xPos = activePoint.x - horzDistanceOfTouchFromObjectX;
     float newObject_yPos = activePoint.y - vertDistanceOfTouchFromObjectY;
     
-    NSLog(@"test log");
-    
     //Limit x position
     /*
     if (newObject_xPos > objectMaxPosition) {
