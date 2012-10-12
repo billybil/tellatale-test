@@ -128,13 +128,6 @@
     //[characterAudioPlayer play];
     
     // Sound FX
-    /*
-     NSError *error;
-     _backgroundMusicPlayer = [[AVAudioPlayer alloc]
-     initWithContentsOfURL:backgroundMusicURL error:&error];
-     [_backgroundMusicPlayer prepareToPlay];
-     [_backgroundMusicPlayer play];
-     */
     NSError *error;
     NSString *path = @"sc_engage.mp3";
     NSData *soundFXfile = [NSData dataWithContentsOfFile:path];
