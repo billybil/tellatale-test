@@ -143,7 +143,7 @@
     [soundFx prepareToPlay];
     NSLog(@"preparing to play: %@", path);
     [soundFx play];
-    NSLog(@"played with gusto!");
+    NSLog(@"jumped with gusto!");
     
 
     //soundFx = [[AVAudioPlayer alloc], path];
